@@ -20,6 +20,9 @@ public class UserService {
     public Message postMessage(int userid, String tekst){
         return userDAO.postMessage(userid, tekst);
     }
+    public User newUser(String username, String password){
+        return userDAO.newUser(username, password);
+    }
 
     public List<Message> getMessages(int userid){
         return userDAO.getMessages(userid);

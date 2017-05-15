@@ -1,5 +1,6 @@
 package com.s61ba.domain;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -7,9 +8,20 @@ import java.util.List;
  */
 public class User {
 
+    private static int lastId = 0;
+
+    private int id;
     private String username;
     private String password;
-    private List<Message> messages;
+    private List<Message> messages = new ArrayList<>();
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getUsername() {
         return username;
@@ -38,6 +50,7 @@ public class User {
     public User(String username, String password) {
         this.username = username;
         this.password = password;
+        this.id = lastId++;
     }
 
 

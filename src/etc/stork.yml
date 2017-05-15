@@ -10,7 +10,7 @@ type: DAEMON
 # Java class to run
 main_class: "${application.class}"
 
-domain: "${project.groupId}"
+com.s61ba.domain: "${project.groupId}"
 
 short_description: "${project.artifactId}"
 

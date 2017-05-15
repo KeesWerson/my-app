@@ -1,4 +1,4 @@
-package com.mycompany;
+package com.s61ba;
 
 import org.jooby.Jooby;
 

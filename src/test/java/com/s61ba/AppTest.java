@@ -1,4 +1,4 @@
-package com.mycompany;
+package com.s61ba;
 
 import static io.restassured.RestAssured.get;
 import static org.hamcrest.Matchers.equalTo;
